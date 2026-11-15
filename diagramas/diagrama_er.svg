@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1470.0 800.0" width="1470.0" height="800.0">
+<style>
+text { font-family: Consolas, 'Courier New', monospace; fill: #1c2329; }
+.linha { font-size: 11px; }
+.nome { font-size: 13px; font-weight: bold; fill: #072638; }
+.nomeTabela { font-size: 13px; font-weight: bold; fill: #ffffff; }
+.estereotipo { font-size: 10px; fill: #4b5864; }
+.rotulo { font-size: 11px; font-weight: bold; fill: #072638; }
+.pacote { font-size: 12px; font-weight: bold; fill: #6e4300; }
+.titulo { font-family: 'Segoe UI', Arial, sans-serif; font-size: 22px; font-weight: bold; fill: #072638; }
+.subtitulo { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; fill: #4b5864; }
+.legenda { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; }
+</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="34" y="40" class="titulo">Prefeitura Atende? - Diagrama entidade-relacionamento</text>
+<text x="34" y="60" class="subtitulo">Global Solution 2026/2 - CitizenTech - modelo relacional do script_banco.sql (Oracle)</text>
+<path d="M204.5 192.0 L204.5 261.0 L204.5 261.0 L204.5 330.0" fill="none" stroke="#0b3954" stroke-width="1.4"/>
+<path d="M197.5 200.0 L211.5 200.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M197.5 206.0 L211.5 206.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M212.5 330.0 L204.5 316.0 L196.5 330.0" fill="none" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M211.5 310.0 L197.5 310.0" stroke="#0b3954" stroke-width="1.6"/>
+<text x="212.5" y="230.0" class="rotulo">1</text>
+<text x="212.5" y="300.0" class="rotulo">N</text>
+<path d="M349.0 378.0 L454.5 378.0 L454.5 358.1 L560.0 358.1" fill="none" stroke="#0b3954" stroke-width="1.4"/>
+<path d="M357.0 385.0 L357.0 371.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M363.0 385.0 L363.0 371.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M560.0 350.1 L546.0 358.1 L560.0 366.1" fill="none" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M540.0 351.1 L540.0 365.1" stroke="#0b3954" stroke-width="1.6"/>
+<text x="379.0" y="372.0" class="rotulo" text-anchor="middle">1</text>
+<text x="530.0" y="352.1" class="rotulo" text-anchor="middle">N</text>
+<path d="M349.0 628.0 L454.5 628.0 L454.5 432.8 L560.0 432.8" fill="none" stroke="#0b3954" stroke-width="1.4"/>
+<path d="M357.0 635.0 L357.0 621.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M363.0 635.0 L363.0 621.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M560.0 424.8 L546.0 432.8 L560.0 440.8" fill="none" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M540.0 425.8 L540.0 439.8" stroke="#0b3954" stroke-width="1.6"/>
+<text x="379.0" y="622.0" class="rotulo" text-anchor="middle">1</text>
+<text x="530.0" y="426.8" class="rotulo" text-anchor="middle">N</text>
+<path d="M1060.0 151.0 L954.5 151.0 L954.5 333.2 L849.0 333.2" fill="none" stroke="#0b3954" stroke-width="1.4"/>
+<path d="M1052.0 144.0 L1052.0 158.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M1046.0 144.0 L1046.0 158.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M849.0 341.2 L863.0 333.2 L849.0 325.2" fill="none" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M869.0 340.2 L869.0 326.2" stroke="#0b3954" stroke-width="1.6"/>
+<text x="1030.0" y="145.0" class="rotulo" text-anchor="middle">1</text>
+<text x="879.0" y="327.2" class="rotulo" text-anchor="middle">N</text>
+<path d="M849.0 416.2 L954.5 416.2 L954.5 461.4 L1060.0 461.4" fill="none" stroke="#0b3954" stroke-width="1.4"/>
+<path d="M857.0 423.2 L857.0 409.2" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M863.0 423.2 L863.0 409.2" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M1060.0 453.4 L1046.0 461.4 L1060.0 469.4" fill="none" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M1040.0 454.4 L1040.0 468.4" stroke="#0b3954" stroke-width="1.6"/>
+<text x="879.0" y="410.2" class="rotulo" text-anchor="middle">1</text>
+<text x="1030.0" y="455.4" class="rotulo" text-anchor="middle">N</text>
+<rect x="60.0" y="110.0" width="289.0" height="82.0" rx="4" fill="#ffffff" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M60.8 140.0 V114.8 Q60.8 110.8 64.8 110.8 H344.2 Q348.2 110.8 348.2 114.8 V140.0 Z" fill="#0b3954"/>
+<text x="204.5" y="130.0" class="nomeTabela" text-anchor="middle">T_GS_ORGAO</text>
+<path d="M60.0 140.0 H349.0" stroke="#0b3954" stroke-width="1.2"/>
+<text x="70.0" y="156.0" class="linha" xml:space="preserve">PK  id_orgao         NUMBER(4)      NOT NULL</text>
+<text x="70.0" y="170.0" class="linha" xml:space="preserve">    nm_orgao         VARCHAR2(100)  NOT NULL</text>
+<text x="70.0" y="184.0" class="linha" xml:space="preserve">UN  sg_orgao         VARCHAR2(15)   NOT NULL</text>
+<rect x="60.0" y="330.0" width="289.0" height="96.0" rx="4" fill="#ffffff" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M60.8 360.0 V334.8 Q60.8 330.8 64.8 330.8 H344.2 Q348.2 330.8 348.2 334.8 V360.0 Z" fill="#0b3954"/>
+<text x="204.5" y="350.0" class="nomeTabela" text-anchor="middle">T_GS_CATEGORIA</text>
+<path d="M60.0 360.0 H349.0" stroke="#0b3954" stroke-width="1.2"/>
+<text x="70.0" y="376.0" class="linha" xml:space="preserve">PK  id_categoria     NUMBER(4)      NOT NULL</text>
+<text x="70.0" y="390.0" class="linha" xml:space="preserve">UN  nm_categoria     VARCHAR2(60)   NOT NULL</text>
+<text x="70.0" y="404.0" class="linha" xml:space="preserve">CK  nr_prazo_dias    NUMBER(3)      NOT NULL</text>
+<text x="70.0" y="418.0" class="linha" xml:space="preserve">FK  id_orgao         NUMBER(4)      NOT NULL</text>
+<rect x="60.0" y="580.0" width="289.0" height="96.0" rx="4" fill="#ffffff" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M60.8 610.0 V584.8 Q60.8 580.8 64.8 580.8 H344.2 Q348.2 580.8 348.2 584.8 V610.0 Z" fill="#0b3954"/>
+<text x="204.5" y="600.0" class="nomeTabela" text-anchor="middle">T_GS_CIDADAO</text>
+<path d="M60.0 610.0 H349.0" stroke="#0b3954" stroke-width="1.2"/>
+<text x="70.0" y="626.0" class="linha" xml:space="preserve">PK  id_cidadao       NUMBER(6)      NOT NULL</text>
+<text x="70.0" y="640.0" class="linha" xml:space="preserve">    nm_cidadao       VARCHAR2(80)   NOT NULL</text>
+<text x="70.0" y="654.0" class="linha" xml:space="preserve">UN  ds_email         VARCHAR2(80)   NOT NULL</text>
+<text x="70.0" y="668.0" class="linha" xml:space="preserve">    nr_telefone      VARCHAR2(11)   NOT NULL</text>
+<rect x="560.0" y="300.0" width="289.0" height="166.0" rx="4" fill="#ffffff" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M560.8 330.0 V304.8 Q560.8 300.8 564.8 300.8 H844.2 Q848.2 300.8 848.2 304.8 V330.0 Z" fill="#0b3954"/>
+<text x="704.5" y="320.0" class="nomeTabela" text-anchor="middle">T_GS_CHAMADO</text>
+<path d="M560.0 330.0 H849.0" stroke="#0b3954" stroke-width="1.2"/>
+<text x="570.0" y="346.0" class="linha" xml:space="preserve">PK  id_chamado       NUMBER(8)      NOT NULL</text>
+<text x="570.0" y="360.0" class="linha" xml:space="preserve">UN  nr_protocolo     VARCHAR2(9)    NOT NULL</text>
+<text x="570.0" y="374.0" class="linha" xml:space="preserve">FK  id_cidadao       NUMBER(6)      NOT NULL</text>
+<text x="570.0" y="388.0" class="linha" xml:space="preserve">FK  id_categoria     NUMBER(4)      NOT NULL</text>
+<text x="570.0" y="402.0" class="linha" xml:space="preserve">FK  id_bairro        NUMBER(4)      NOT NULL</text>
+<text x="570.0" y="416.0" class="linha" xml:space="preserve">    ds_endereco      VARCHAR2(150)  NOT NULL</text>
+<text x="570.0" y="430.0" class="linha" xml:space="preserve">    ds_problema      VARCHAR2(400)  NOT NULL</text>
+<text x="570.0" y="444.0" class="linha" xml:space="preserve">    dt_abertura      DATE           NOT NULL</text>
+<text x="570.0" y="458.0" class="linha" xml:space="preserve">CK  st_chamado       VARCHAR2(25)   NOT NULL</text>
+<rect x="1060.0" y="110.0" width="289.0" height="82.0" rx="4" fill="#ffffff" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M1060.8 140.0 V114.8 Q1060.8 110.8 1064.8 110.8 H1344.2 Q1348.2 110.8 1348.2 114.8 V140.0 Z" fill="#0b3954"/>
+<text x="1204.5" y="130.0" class="nomeTabela" text-anchor="middle">T_GS_BAIRRO</text>
+<path d="M1060.0 140.0 H1349.0" stroke="#0b3954" stroke-width="1.2"/>
+<text x="1070.0" y="156.0" class="linha" xml:space="preserve">PK  id_bairro        NUMBER(4)      NOT NULL</text>
+<text x="1070.0" y="170.0" class="linha" xml:space="preserve">UN  nm_bairro        VARCHAR2(60)   NOT NULL</text>
+<text x="1070.0" y="184.0" class="linha" xml:space="preserve">CK  ds_regiao        VARCHAR2(10)   NOT NULL</text>
+<rect x="1060.0" y="420.0" width="289.0" height="138.0" rx="4" fill="#ffffff" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M1060.8 450.0 V424.8 Q1060.8 420.8 1064.8 420.8 H1344.2 Q1348.2 420.8 1348.2 424.8 V450.0 Z" fill="#0b3954"/>
+<text x="1204.5" y="440.0" class="nomeTabela" text-anchor="middle">T_GS_MOVIMENTACAO</text>
+<path d="M1060.0 450.0 H1349.0" stroke="#0b3954" stroke-width="1.2"/>
+<text x="1070.0" y="466.0" class="linha" xml:space="preserve">PK  id_movimentacao  NUMBER(10)     NOT NULL</text>
+<text x="1070.0" y="480.0" class="linha" xml:space="preserve">FK  id_chamado       NUMBER(8)      NOT NULL</text>
+<text x="1070.0" y="494.0" class="linha" xml:space="preserve">    dt_movimentacao  DATE           NOT NULL</text>
+<text x="1070.0" y="508.0" class="linha" xml:space="preserve">CK  st_chamado       VARCHAR2(25)   NOT NULL</text>
+<text x="1070.0" y="522.0" class="linha" xml:space="preserve">    nm_responsavel   VARCHAR2(80)   NOT NULL</text>
+<text x="1070.0" y="536.0" class="linha" xml:space="preserve">    ds_movimentacao  VARCHAR2(400)  NOT NULL</text>
+<text x="1070.0" y="550.0" class="linha" xml:space="preserve">CK  ds_evidencia     VARCHAR2(150)</text>
+<rect x="560.0" y="560.0" width="400" height="166.0" rx="4" fill="#f6f7f5" stroke="#cfd6db"/>
+<text x="574.0" y="580.0" class="legenda" font-weight="bold">Legenda</text>
+<path d="M576.0 598.0 L646.0 598.0" stroke="#0b3954" stroke-width="1.4"/>
+<path d="M584.0 605.0 L584.0 591.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M590.0 605.0 L590.0 591.0" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M646.0 590.0 L632.0 598.0 L646.0 606.0" fill="none" stroke="#0b3954" stroke-width="1.6"/>
+<path d="M626.0 591.0 L626.0 605.0" stroke="#0b3954" stroke-width="1.6"/>
+<text x="660.0" y="602.0" class="legenda">Um para muitos (1:N), lido do lado 1 para o lado N</text>
+<text x="576.0" y="624.0" class="legenda">PK chave primária  |  FK chave estrangeira</text>
+<text x="576.0" y="646.0" class="legenda">UN valor único  |  CK regra de validação (CHECK)</text>
+<text x="576.0" y="668.0" class="legenda">Um órgão responde por várias categorias.</text>
+<text x="576.0" y="690.0" class="legenda">Cidadão, categoria e bairro têm vários chamados.</text>
+<text x="576.0" y="712.0" class="legenda">Um chamado tem várias movimentações.</text>
+</svg>
