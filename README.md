@@ -4,7 +4,8 @@ Global Solution 2026/2 da FIAP, tema **CitizenTech**. Turma 2ESOR, Engenharia de
 
 Acompanhamento público de chamados de zeladoria urbana: buraco na rua, lâmpada apagada, bueiro entupido, entulho na calçada e poda de árvore. O cidadão abre o chamado, vê com quem ele está e só ele pode dizer que o problema foi resolvido.
 
-- Site publicado: (preencher com o endereço da Vercel)
+- Site publicado: https://prefeitura-atende.vercel.app
+- Repositório: https://github.com/alfredohrh/prefeitura-atende
 - Vídeo pitch: (preencher com o link do vídeo)
 
 ## O problema
