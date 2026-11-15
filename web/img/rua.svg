@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="titulo-rua">
+  <title id="titulo-rua">Rua com um buraco sinalizado, um poste aceso e um chamado marcado como resolvido</title>
+  <circle cx="250" cy="150" r="140" fill="#124a6b"/>
+  <circle cx="92" cy="70" r="5" fill="#ffc93c" opacity="0.7"/>
+  <circle cx="412" cy="212" r="4" fill="#ffc93c" opacity="0.5"/>
+  <circle cx="140" cy="36" r="3" fill="#d9e6ee" opacity="0.6"/>
+
+  <rect x="96" y="96" width="74" height="134" rx="3" fill="#1d6088"/>
+  <rect x="176" y="62" width="88" height="168" rx="3" fill="#2a7aa8"/>
+  <rect x="270" y="112" width="70" height="118" rx="3" fill="#1d6088"/>
+  <g fill="#0b3954">
+    <rect x="108" y="110" width="14" height="16" rx="1"/><rect x="144" y="110" width="14" height="16" rx="1"/>
+    <rect x="108" y="140" width="14" height="16" rx="1"/><rect x="144" y="170" width="14" height="16" rx="1"/>
+    <rect x="108" y="170" width="14" height="16" rx="1"/>
+    <rect x="190" y="78" width="16" height="18" rx="1"/><rect x="236" y="78" width="16" height="18" rx="1"/>
+    <rect x="213" y="110" width="16" height="18" rx="1"/><rect x="190" y="142" width="16" height="18" rx="1"/>
+    <rect x="236" y="142" width="16" height="18" rx="1"/><rect x="213" y="174" width="16" height="18" rx="1"/>
+    <rect x="282" y="128" width="14" height="16" rx="1"/><rect x="314" y="158" width="14" height="16" rx="1"/>
+    <rect x="282" y="188" width="14" height="16" rx="1"/>
+  </g>
+  <g fill="#ffc93c">
+    <rect x="144" y="140" width="14" height="16" rx="1"/>
+    <rect x="213" y="78" width="16" height="18" rx="1"/><rect x="190" y="110" width="16" height="18" rx="1"/>
+    <rect x="236" y="110" width="16" height="18" rx="1"/><rect x="236" y="174" width="16" height="18" rx="1"/>
+    <rect x="314" y="128" width="14" height="16" rx="1"/><rect x="282" y="158" width="14" height="16" rx="1"/>
+  </g>
+
+  <rect x="372" y="178" width="8" height="52" rx="2" fill="#5a4630"/>
+  <circle cx="376" cy="160" r="30" fill="#2f8f6b"/>
+  <circle cx="356" cy="174" r="18" fill="#3aa57c"/>
+  <circle cx="396" cy="176" r="16" fill="#2a8060"/>
+
+  <rect x="20" y="230" width="440" height="12" rx="2" fill="#9fb3c0"/>
+  <rect x="20" y="242" width="440" height="58" rx="4" fill="#072638"/>
+  <g fill="#d9e6ee" opacity="0.75">
+    <rect x="44" y="268" width="38" height="5" rx="2"/><rect x="112" y="268" width="38" height="5" rx="2"/>
+    <rect x="306" y="268" width="38" height="5" rx="2"/><rect x="374" y="268" width="38" height="5" rx="2"/>
+  </g>
+
+  <ellipse cx="232" cy="272" rx="46" ry="13" fill="#03141f"/>
+  <ellipse cx="232" cy="269" rx="36" ry="8" fill="#000" opacity="0.5"/>
+  <path d="M176 262l-9 22h18z" fill="#ffc93c"/>
+  <rect x="169" y="271" width="14" height="5" fill="#fff"/>
+  <rect x="164" y="284" width="24" height="5" rx="2" fill="#e0a800"/>
+  <path d="M290 258l-9 22h18z" fill="#ffc93c"/>
+  <rect x="283" y="267" width="14" height="5" fill="#fff"/>
+  <rect x="278" y="280" width="24" height="5" rx="2" fill="#e0a800"/>
+
+  <rect x="62" y="104" width="6" height="128" rx="2" fill="#d9e6ee"/>
+  <path d="M65 104q0-18 22-18" fill="none" stroke="#d9e6ee" stroke-width="6" stroke-linecap="round"/>
+  <rect x="82" y="80" width="22" height="9" rx="4" fill="#d9e6ee"/>
+  <path d="M82 89h22l14 54H68z" fill="#ffc93c" opacity="0.22"/>
+  <rect x="86" y="88" width="14" height="5" rx="2" fill="#ffc93c"/>
+
+  <g transform="translate(318 22)">
+    <rect width="132" height="86" rx="8" fill="#ffffff"/>
+    <rect x="14" y="14" width="56" height="8" rx="4" fill="#0b3954"/>
+    <rect x="14" y="32" width="88" height="6" rx="3" fill="#cfd6db"/>
+    <rect x="14" y="46" width="70" height="6" rx="3" fill="#cfd6db"/>
+    <rect x="14" y="62" width="62" height="14" rx="7" fill="#e3f4e6"/>
+    <circle cx="24" cy="69" r="3" fill="#1d5e2a"/>
+    <rect x="31" y="66" width="38" height="6" rx="3" fill="#1d5e2a"/>
+    <circle cx="112" cy="68" r="24" fill="#ffc93c" stroke="#0b3954" stroke-width="4"/>
+    <path d="M101 68l8 8 15-17" fill="none" stroke="#0b3954" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

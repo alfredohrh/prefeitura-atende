@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Acompanhamento público de chamados de zeladoria urbana, com prazo, evidência e confirmação do cidadão.">
+  <title>Início | Prefeitura Atende?</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="limite topo-interno">
+      <a class="marca" href="index.html"><span class="marca-simbolo" aria-hidden="true"></span><span>Prefeitura Atende?</span></a>
+      <p class="marca-frase">Zeladoria urbana com prazo, evidência e confirmação do cidadão</p>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul class="limite">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="chamados.html">Chamados</a></li>
+        <li><a href="abrir.html">Abrir chamado</a></li>
+        <li><a href="painel.html">Painel público</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="heroi" aria-labelledby="titulo-inicio">
+      <div class="limite heroi-interno">
+        <div class="heroi-texto">
+          <p class="sobretitulo">Zeladoria urbana com transparência</p>
+          <h1 id="titulo-inicio">O buraco foi tapado mesmo?</h1>
+          <p>Hoje o chamado some do radar do cidadão: o órgão marca como atendido e ninguém confere. Aqui cada chamado tem prazo público, só é encerrado com evidência e só conta como resolvido quando quem abriu confirma.</p>
+          <div class="botoes">
+            <a class="botao botao-destaque" href="abrir.html">Abrir um chamado</a>
+            <a class="botao botao-claro" href="chamados.html">Acompanhar chamados</a>
+          </div>
+        </div>
+        <img class="heroi-imagem" src="img/rua.svg" width="480" height="320" alt="Rua com um buraco sinalizado, um poste aceso e um chamado marcado como resolvido">
+      </div>
+    </section>
+
+    <div class="limite">
+    <section class="secao" aria-labelledby="titulo-numeros">
+      <h2 id="titulo-numeros">Números de hoje</h2>
+      <div class="numeros">
+        <article class="numero">
+          <h3>Chamados registrados</h3>
+          <strong class="valor" id="numero-total">-</strong>
+          <p id="detalhe-total"></p>
+        </article>
+        <article class="numero">
+          <h3>Resolvidos e confirmados</h3>
+          <strong class="valor" id="numero-resolvidos">-</strong>
+          <p id="detalhe-resolvidos"></p>
+        </article>
+        <article class="numero alerta">
+          <h3>Fora do prazo</h3>
+          <strong class="valor" id="numero-fora">-</strong>
+          <p id="detalhe-fora"></p>
+        </article>
+        <article class="numero alerta">
+          <h3>Taxa de contestação</h3>
+          <strong class="valor" id="numero-contestacao">-</strong>
+          <p id="detalhe-contestacao"></p>
+        </article>
+      </div>
+      <p class="nota" id="data-calculo"></p>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-categorias-inicio">
+      <h2 id="titulo-categorias-inicio">O que dá para pedir</h2>
+      <p class="apoio">Cada tipo de problema tem um órgão responsável e um prazo. Escolha um para ver os chamados dessa categoria.</p>
+      <ul class="categorias-inicio" id="categorias-inicio"></ul>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-recentes">
+      <h2 id="titulo-recentes">Chamados mais recentes</h2>
+      <ul class="lista-chamados recentes" id="chamados-recentes"></ul>
+      <p><a class="link-seta" href="chamados.html">Ver todos os chamados</a></p>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-etapas">
+      <h2 id="titulo-etapas">Como funciona</h2>
+      <ol class="etapas">
+        <li>
+          <h3>Cidadão abre o chamado</h3>
+          <span class="selo selo-aberto">Aberto</span>
+          <p>Escolhe a categoria, o bairro e o endereço e pode anexar uma foto. O protocolo sai na hora, com o órgão responsável e o prazo.</p>
+        </li>
+        <li>
+          <h3>Órgão recebe e executa</h3>
+          <span class="selo selo-andamento">Recebido pelo órgão</span>
+          <span class="selo selo-andamento">Em execução</span>
+          <p>Cada passo fica na linha do tempo com data, hora e o nome da equipe responsável.</p>
+        </li>
+        <li>
+          <h3>Órgão encerra com evidência</h3>
+          <span class="selo selo-aguardando">Aguardando confirmação do cidadão</span>
+          <p>Sem a evidência do serviço (foto do depois) o órgão não consegue encerrar.</p>
+        </li>
+        <li>
+          <h3>Cidadão confirma</h3>
+          <span class="selo selo-resolvido">Resolvido</span>
+          <p>Só aqui o chamado passa a contar como resolvido. O tempo de resolução vai da abertura até o encerramento pelo órgão.</p>
+        </li>
+        <li>
+          <h3>Ou o cidadão contesta</h3>
+          <span class="selo selo-contestado">Contestado pelo cidadão</span>
+          <p>Com o motivo explicado, o chamado volta para o órgão, o relógio do prazo continua correndo e a contestação entra na taxa do órgão.</p>
+        </li>
+        <li>
+          <h3>Cancelamento</h3>
+          <span class="selo selo-cancelado">Cancelado</span>
+          <p>Enquanto ninguém recebeu o chamado, o próprio cidadão pode cancelar informando o motivo. Cancelados não entram nos indicadores.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-atalhos">
+      <h2 id="titulo-atalhos">Por onde começar</h2>
+      <div class="atalhos">
+        <a class="atalho" href="chamados.html"><strong>Chamados</strong><span>Filtre por situação, categoria e bairro e veja a linha do tempo de cada um.</span></a>
+        <a class="atalho" href="abrir.html"><strong>Abrir chamado</strong><span>Registre um problema na rua e receba o protocolo com o prazo.</span></a>
+        <a class="atalho" href="painel.html"><strong>Painel público</strong><span>Compare órgãos e categorias: tempo médio, atrasos e contestações.</span></a>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="limite">
+      <p><strong>Prefeitura Atende?</strong></p>
+      <p>Protótipo acadêmico independente. Não é um canal oficial de nenhuma prefeitura. Cidadãos, endereços e chamados são fictícios; categorias e prazos seguem o Portal SP156 da Prefeitura de São Paulo.</p>
+      <p id="aviso-armazenamento" class="aviso" hidden></p>
+      <button type="button" id="botao-restaurar" class="botao-discreto">Restaurar dados de exemplo</button>
+    </div>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>

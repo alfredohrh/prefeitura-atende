@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulário para abrir um chamado de zeladoria urbana.">
+  <title>Abrir chamado | Prefeitura Atende?</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="limite topo-interno">
+      <a class="marca" href="index.html"><span class="marca-simbolo" aria-hidden="true"></span><span>Prefeitura Atende?</span></a>
+      <p class="marca-frase">Zeladoria urbana com prazo, evidência e confirmação do cidadão</p>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul class="limite">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="chamados.html">Chamados</a></li>
+        <li><a href="abrir.html" aria-current="page">Abrir chamado</a></li>
+        <li><a href="painel.html">Painel público</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="limite">
+    <section class="introducao" aria-labelledby="titulo-abrir">
+      <div>
+        <h1 id="titulo-abrir">Abrir chamado</h1>
+        <p>Descreva o problema e onde ele está. Ao enviar, você recebe o protocolo, o órgão responsável e a data limite do prazo. Campos com <span class="obrigatorio" aria-hidden="true">*</span> são obrigatórios.</p>
+      </div>
+      <img class="introducao-imagem" src="img/formulario.svg" width="220" height="150" alt="">
+    </section>
+
+    <section class="confirmacao" id="confirmacao" aria-labelledby="titulo-confirmacao" tabindex="-1" hidden>
+      <h2 id="titulo-confirmacao">Chamado registrado</h2>
+      <p>Guarde o número do protocolo:</p>
+      <strong class="protocolo-grande" id="confirmacao-protocolo"></strong>
+      <dl class="dados-chamado">
+        <dt>Órgão responsável</dt>
+        <dd id="confirmacao-orgao"></dd>
+        <dt>Categoria</dt>
+        <dd id="confirmacao-categoria"></dd>
+        <dt>Prazo</dt>
+        <dd id="confirmacao-prazo"></dd>
+        <dt>Endereço</dt>
+        <dd id="confirmacao-endereco"></dd>
+      </dl>
+      <p id="confirmacao-cidadao" class="dica"></p>
+      <p id="confirmacao-aviso" class="aviso" hidden></p>
+      <div class="botoes">
+        <a class="botao" id="link-acompanhar" href="chamados.html">Acompanhar este chamado</a>
+        <button type="button" class="botao botao-secundario" id="botao-novo">Abrir outro chamado</button>
+      </div>
+    </section>
+
+    <div class="resumo-erros" id="resumo-erros" tabindex="-1" role="alert" hidden>
+      <h2>Confira os campos abaixo</h2>
+      <ul id="lista-erros"></ul>
+    </div>
+
+    <form class="formulario" id="form-chamado" novalidate>
+      <fieldset>
+        <legend>Seus dados</legend>
+        <div class="campo">
+          <label for="nome">Nome completo <span class="obrigatorio" aria-hidden="true">*</span></label>
+          <input type="text" id="nome" name="nome" autocomplete="name" required aria-describedby="erro-nome">
+          <p class="erro-campo" id="erro-nome"></p>
+        </div>
+        <div class="linha-dupla">
+          <div class="campo">
+            <label for="email">E-mail <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="erro-email">
+            <p class="erro-campo" id="erro-email"></p>
+          </div>
+          <div class="campo">
+            <label for="telefone">Telefone com DDD <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="tel" placeholder="11 98888-0101" required aria-describedby="dica-telefone erro-telefone">
+            <p class="dica" id="dica-telefone">10 ou 11 dígitos, contando o DDD.</p>
+            <p class="erro-campo" id="erro-telefone"></p>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>O problema</legend>
+        <div class="campo">
+          <label for="categoria">Categoria <span class="obrigatorio" aria-hidden="true">*</span></label>
+          <select id="categoria" name="categoria" required aria-describedby="info-categoria erro-categoria">
+            <option value="">Escolha a categoria</option>
+          </select>
+          <p class="info-categoria" id="info-categoria" aria-live="polite">Escolha a categoria para ver o órgão responsável e o prazo.</p>
+          <p class="erro-campo" id="erro-categoria"></p>
+        </div>
+        <div class="campo">
+          <label for="bairro">Bairro <span class="obrigatorio" aria-hidden="true">*</span></label>
+          <select id="bairro" name="bairro" required aria-describedby="erro-bairro">
+            <option value="">Escolha o bairro</option>
+          </select>
+          <p class="erro-campo" id="erro-bairro"></p>
+        </div>
+        <div class="campo">
+          <label for="endereco">Endereço ou ponto de referência <span class="obrigatorio" aria-hidden="true">*</span></label>
+          <input type="text" id="endereco" name="endereco" autocomplete="street-address" placeholder="Rua Alvarenga, altura do 1200" required aria-describedby="erro-endereco">
+          <p class="erro-campo" id="erro-endereco"></p>
+        </div>
+        <div class="campo">
+          <label for="descricao">Descrição do problema <span class="obrigatorio" aria-hidden="true">*</span></label>
+          <textarea id="descricao" name="descricao" rows="4" required aria-describedby="dica-descricao erro-descricao"></textarea>
+          <p class="dica" id="dica-descricao">Pelo menos 10 caracteres. Conte o que está acontecendo e há quanto tempo.</p>
+          <p class="erro-campo" id="erro-descricao"></p>
+        </div>
+        <div id="lugar-da-foto">
+        </div>
+      </fieldset>
+
+      <div class="botoes">
+        <button type="submit" class="botao">Enviar chamado</button>
+        <button type="reset" class="botao botao-secundario">Limpar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <div class="limite">
+      <p><strong>Prefeitura Atende?</strong></p>
+      <p>Protótipo acadêmico independente. Não é um canal oficial de nenhuma prefeitura. Cidadãos, endereços e chamados são fictícios; categorias e prazos seguem o Portal SP156 da Prefeitura de São Paulo.</p>
+      <p id="aviso-armazenamento" class="aviso" hidden></p>
+      <button type="button" id="botao-restaurar" class="botao-discreto">Restaurar dados de exemplo</button>
+    </div>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/abrir.js"></script>
+</body>
+</html>

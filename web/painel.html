@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Indicadores públicos de zeladoria urbana por órgão e por categoria.">
+  <title>Painel público | Prefeitura Atende?</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="limite topo-interno">
+      <a class="marca" href="index.html"><span class="marca-simbolo" aria-hidden="true"></span><span>Prefeitura Atende?</span></a>
+      <p class="marca-frase">Zeladoria urbana com prazo, evidência e confirmação do cidadão</p>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul class="limite">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="chamados.html">Chamados</a></li>
+        <li><a href="abrir.html">Abrir chamado</a></li>
+        <li><a href="painel.html" aria-current="page">Painel público</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="limite">
+    <section class="introducao" aria-labelledby="titulo-painel">
+      <div>
+        <h1 id="titulo-painel">Painel público</h1>
+        <p>Quanto tempo cada órgão leva para resolver, quantos chamados passaram do prazo e quantas vezes o cidadão disse que o serviço não ficou bom. <span id="data-painel"></span></p>
+      </div>
+      <img class="introducao-imagem" src="img/painel.svg" width="220" height="150" alt="">
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-geral">
+      <h2 id="titulo-geral">Visão geral</h2>
+      <div class="cartoes-gerais">
+        <article class="numero">
+          <h3>Chamados considerados</h3>
+          <strong class="valor" id="geral-total">-</strong>
+          <p id="geral-total-detalhe"></p>
+        </article>
+        <article class="numero">
+          <h3>Resolvidos</h3>
+          <strong class="valor" id="geral-resolvidos">-</strong>
+          <p>confirmados pelo cidadão</p>
+        </article>
+        <article class="numero">
+          <h3>Tempo médio</h3>
+          <strong class="valor" id="geral-tempo">-</strong>
+          <p>dias para resolver</p>
+        </article>
+        <article class="numero alerta">
+          <h3>Fora do prazo</h3>
+          <strong class="valor" id="geral-fora">-</strong>
+          <p id="geral-fora-detalhe"></p>
+        </article>
+        <article class="numero alerta">
+          <h3>Taxa de contestação</h3>
+          <strong class="valor" id="geral-contestacao">-</strong>
+          <p id="geral-contestacao-detalhe"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-orgaos">
+      <h2 id="titulo-orgaos">Por órgão</h2>
+      <div class="rolagem" role="region" aria-labelledby="titulo-orgaos" tabindex="0">
+        <table>
+          <caption>Indicadores por órgão responsável</caption>
+          <thead>
+            <tr>
+              <th scope="col">Órgão</th>
+              <th scope="col">Chamados</th>
+              <th scope="col">Resolvidos</th>
+              <th scope="col">Tempo médio</th>
+              <th scope="col">Fora do prazo</th>
+              <th scope="col">Taxa de contestação</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-orgaos"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-categorias">
+      <h2 id="titulo-categorias">Por categoria</h2>
+      <div class="rolagem" role="region" aria-labelledby="titulo-categorias" tabindex="0">
+        <table>
+          <caption>Indicadores por categoria de serviço</caption>
+          <thead>
+            <tr>
+              <th scope="col">Categoria</th>
+              <th scope="col">Chamados</th>
+              <th scope="col">Resolvidos</th>
+              <th scope="col">Tempo médio</th>
+              <th scope="col">Fora do prazo</th>
+              <th scope="col">Taxa de contestação</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-categorias"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-legenda">
+      <h2 id="titulo-legenda">Como cada número é calculado</h2>
+      <dl class="legenda">
+        <dt>Chamados considerados</dt>
+        <dd>Todos os chamados registrados, menos os cancelados. Cancelados não entram em nenhum indicador.</dd>
+        <dt>Resolvidos</dt>
+        <dd>Chamados em que o órgão encerrou com evidência e o cidadão confirmou. Encerrado sem confirmação ainda não conta.</dd>
+        <dt>Tempo médio (dias)</dt>
+        <dd>Média, entre os resolvidos, dos dias corridos da data de abertura até a data do último encerramento pelo órgão. O tempo que o cidadão leva para confirmar não pesa contra o órgão.</dd>
+        <dt>Fora do prazo</dt>
+        <dd>Chamados cuja data de referência passou da data limite (abertura + prazo da categoria em dias corridos). A data de referência é a do encerramento para os resolvidos e para os que aguardam confirmação, e a data de hoje para os que ainda estão abertos, recebidos, em execução ou contestados. A barra mostra a parte do total.</dd>
+        <dt>Taxa de contestação</dt>
+        <dd>Chamados que tiveram pelo menos uma contestação divididos pelos chamados que o órgão já encerrou alguma vez, em porcentagem. Um chamado contestado conta contra o órgão mesmo que depois seja resolvido.</dd>
+        <dt>Prazos</dt>
+        <dd id="legenda-prazos">Cada categoria tem um prazo em dias corridos, conforme as categorias do Portal SP156.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="limite">
+      <p><strong>Prefeitura Atende?</strong></p>
+      <p>Protótipo acadêmico independente. Não é um canal oficial de nenhuma prefeitura. Cidadãos, endereços e chamados são fictícios; categorias e prazos seguem o Portal SP156 da Prefeitura de São Paulo.</p>
+      <p id="aviso-armazenamento" class="aviso" hidden></p>
+      <button type="button" id="botao-restaurar" class="botao-discreto">Restaurar dados de exemplo</button>
+    </div>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/comum.js"></script>
+  <script src="js/painel.js"></script>
+</body>
+</html>
