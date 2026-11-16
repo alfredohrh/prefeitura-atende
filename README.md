@@ -6,7 +6,7 @@ Acompanhamento público de chamados de zeladoria urbana: buraco na rua, lâmpada
 
 - Site publicado: https://prefeitura-atende.vercel.app
 - Repositório: https://github.com/alfredohrh/prefeitura-atende
-- Vídeo pitch: (preencher com o link do vídeo)
+- Vídeo pitch: https://youtu.be/RCJDkf_fdXI
 
 ## O problema
 
